@@ -28,12 +28,12 @@ tagsInputDependencies <- function(){
 #' \dontrun{
 #'   library(shiny)
 #'   ui <- fluidPage(
-#'     tagsTextInput("text", "Text", "foo,bar"),
+#'     tagsTextInput("fruits", "Fruits", "apple, banana"),
 #'     textOutput("out")
 #'   )
 #'
 #'   server <- function(input, output){
-#'     output$out <- renderPrint(input$text)
+#'     output$out <- renderPrint( strsplit( input$fruits, ",")[[1]] )
 #'   }
 #'
 #'   shinyApp( ui, server )
