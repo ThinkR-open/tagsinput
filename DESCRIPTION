@@ -3,9 +3,13 @@ Type: Package
 Title: Bootstrap Tags input for Shiny
 Version: 0.1.0
 Authors@R: c(
-    person("Romain", "François", email = "romain@thinkr.fr", role = c("aut", "cre"))
+    person("Romain", "François", email = "romain@thinkr.fr", role = c("aut", "cre")), 
+    person("Dean", "Attali", email = "daattali@gmail.com", role = "ctb" )
   )
 Description: Bootstrap Tags input for Shiny.
 Encoding: UTF-8
 LazyData: true
 License: MIT + file LICENSE
+Imports: shiny,
+    htmltools
+RoxygenNote: 6.0.1
